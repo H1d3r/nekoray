@@ -71,12 +71,6 @@ ninja && ninja install
 
 cd ../..
 
-system_name=$(uname -s)
-
-# Check if 'NT' is present in the system name
-if [[ "$system_name" == *"NT"* ]]; then
-  echo "System is likely Windows"
-else
   git clone https://github.com/curl/curl.git
   cd curl
   git checkout 83bedbd730d62b83744cc26fa0433d3f6e2e4cd6
@@ -94,7 +88,6 @@ else
   ninja && ninja install
 
   cd ../..
-fi
 
 ####
 clean
