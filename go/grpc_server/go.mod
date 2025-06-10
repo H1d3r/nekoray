@@ -1,6 +1,6 @@
 module grpc_server
 
-go 1.19
+go 1.23.0
 
 require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0
@@ -10,9 +10,9 @@ require (
 )
 
 require (
-	golang.org/x/net v0.22.0 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/net v0.38.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240314234333-6e1732d8331c // indirect
 )
 
